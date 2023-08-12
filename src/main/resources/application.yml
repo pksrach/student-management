@@ -1,0 +1,17 @@
+samrach:
+  appName: Student Management
+  version: 1.0.0
+server:
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  thymeleaf:
+    enabled: true
+    cache: false
+
+logging:
+  level:
+    sql: debug
+    web: debug
