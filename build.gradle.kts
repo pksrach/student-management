@@ -16,10 +16,20 @@ repositories {
 }
 
 dependencies {
+	// Data JPA
+	implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
+
+	// Dev tool
 	developmentOnly ("org.springframework.boot:spring-boot-devtools")
+
+	// Thymeleaf
 	implementation ("org.springframework.boot:spring-boot-starter-thymeleaf")
-	implementation("org.springframework.boot:spring-boot-starter-web")
+
+	// Database
 	runtimeOnly("org.postgresql:postgresql")
+
+	// Web
+	implementation("org.springframework.boot:spring-boot-starter-web")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

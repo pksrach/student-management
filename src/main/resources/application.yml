@@ -10,8 +10,16 @@ spring:
   thymeleaf:
     enabled: true
     cache: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/student-management
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
 
 logging:
   level:
     sql: debug
-    web: debug
